@@ -2,7 +2,7 @@
 La virtualización ha sido ampliamente implementada por empresas en centros de datos en instalaciones locales para albergar prácticamente cualquier carga de trabajo y como cualquier otro servidor en su centro de datos, realizar backup y restaurar máquinas virtuales de manera confiable es fundamental para la continuidad del negocio, por ello, se plantea una solución de Backup entre un centro de datos On-premise hacia IBM Cloud, simulando entornos completamente diferentes entre sí.
 
 Se presenta la arquitectura de referencia:
-<p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Veeam-Backup/blob/main/Images/Arquitectura1.jpg"></p>
+<p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/Arquitectura1.jpg"></p>
 
 La arquitectura presentada simula un entorno de Backup entre un centro de datos On-premise y la nube de IBM, simulando el entorno empresarial mediante la infraestructura clásica contando con un vCenter server applience y un Veeam Backup server, además del servidor o VM por replicar.
 
