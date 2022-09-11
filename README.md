@@ -33,7 +33,7 @@ Antes de iniciar el despliegue de la plataforma VMware vSphere es necesario crea
 3. Luego de esto copie y descargue la clave de API en un lugar seguro para poder utilizarla mas adelante.
 
 
-<p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/IAM.png"></p>
+<p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/IAM.png"></p>
 
 <br />
 
@@ -45,7 +45,7 @@ Antes de iniciar con el desplegue del vCenter Server Applience es necesario crea
 1. Desde la consola de IBM Cloud diríjase al catalogo de productos, una vez aquí busque VMware.
 2. En esta nueva ventana de click sobre VMware Solutions Dedicated, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
 
-<p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/DespliegueBaremetal1.png"></p>
+<p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/DespliegueBaremetal1.png"></p>
 
 - Solutions types: Selecciones VMware vSphere, luego seleccione la casilla Create new o verifique que ya se encuentra marcada.
 - Cluster configurations: New cluster.
@@ -55,7 +55,7 @@ Antes de iniciar con el desplegue del vCenter Server Applience es necesario crea
 
   Seleccione la versión de la licencia que desee teniendo en cuenta que no puede ser inferior a la versión más reciente de la imagen ISO del vCSA en este caso seleccione vSphere 7.0u2, luego de esto seleccione las casillas de Include license with purchase y VMware vCenter Server > Include license with purchase.
   
-  <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/DespliegueBaremetal2.png"></p>
+  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/DespliegueBaremetal2.png"></p>
   
 4. Bare metal server: 
 
@@ -66,7 +66,7 @@ Antes de iniciar con el desplegue del vCenter Server Applience es necesario crea
 - RAM: Seleccione la cantidad de memoria necesaria.
 - Number of bare metal server: Seleccione la cantidad de servidores bare metal que desee desplegar.
 
-<p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/DespliegueBaremetal4.png"></p>
+<p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/DespliegueBaremetal4.png"></p>
   
 5. Network interface:
 
@@ -90,7 +90,7 @@ Para esto es necesario desplegar una VSI Windows de infraestructura clásica en 
    - Quantity: Seleccione 1.
    - Billing method: Seleccione Monthly.
 
-  <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/VSFC1.png"></p>
+  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/VSFC1.png"></p>
 
    - Location: Selecione la ubicación en la cual desee deplegar la VSI, en este caso se utilizó Dallas 9.
    - Profile: Seleccione la configuración de perfil que desee, en este caso se utilizó B1.4X16.
@@ -102,7 +102,7 @@ Para esto es necesario desplegar una VSI Windows de infraestructura clásica en 
    - Uplink port speeds: Seleccione 1 Gbps non rate-limited private network uplinks.
    - Private VLAN: Seleccione la misma VLAN en la que está ubicado el Host. Para ver esta información diríjase a la lista de recursos y en la pestaña de Devices encontrará el Host creado anteriormente, de click sobre el nombre, esto lo llevará a la pestaña overview, en esta pestaña en la sección de Netowrk details encontrará las VLANs asociadas a cada interfaz, tanto la pública como la privada.
 
-  <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/VSFC2.png"></p>
+  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/VSFC2.png"></p>
   
   Luego de completar esta información de click sobre el botón crear.
 
@@ -131,7 +131,7 @@ Una vez desplegada la VSI Windows de infraestructura clásica se debe descargar 
 <a href="https://www.ibm.com/cloud/vpn-access"> acceso VPN en IBM Cloud</a>
  luego de esto ingrese mediante Remote Desktop a la VSI desplegada anteriormente con la IP (la cual la encuentra en la pestaña de overview), el usuario y contraseña (Los cuales encuentra en la pestaña de Passwords) 
  
- <p align="center"><img width="400" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/RDP.png"></p> 
+ <p align="center"><img width="400" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/RDP.png"></p> 
  
 Una vez aquí ingrese al siguiente <a href="http://downloads.service.softlayer.com/vmware/"> enlace de descarga</a> mediante cualquier navegador para descargar la imagen ISO del vCSA seleccionando la versión de VMware-VCSA-all-6.7.0-16046470.iso, este proceso se realiza en la VSI para ahorrar tiempo y mejorar su eficiencia.
 
@@ -150,7 +150,7 @@ Luego de descargar el software tenga en cuenta los siguientes pasos para despleg
    - User name: ingrese el usuario root del Host.
    - Password: ingrese la contraseña del usuario root del Host (esta la puede encontrar en la pestaña passwords del servidor de vSphere).
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE11.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE11.png"></p> 
  
    - De click en Next y acepte la advertencia de certificado.
  - Set up appliance VM:
@@ -173,20 +173,20 @@ De click en Next.
    - DNS Servers: Ingrese los DNS de los servidores de IBM Cloud (10.0.80.11, 10.0.80.12)
    - De click en el boton Next.
    - 
-  <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE12.png"></p> 
+  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE12.png"></p> 
   
  - Ready to complete stage 1: espere a que se termine el primer stage de la instalación.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE13.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE13.png"></p>
  
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE14.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE14.png"></p> 
  
 2. STAGE 2
 
 - Luego de terminar la configuración del Stage 1 se abrirá de manera automática el Stage 2, en caso de que esto no suceda siga las instrucciones de la ventana emergente para acceder a la configuración del stage 2.
 Una vez se encuentre en la pestaña de configuración del stage 2 tenga en cuenta los siguientes pasos.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE21.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE21.png"></p> 
 
 - Ingrese el usuario y contraseña que le asigno al vCenter Server Appliance anteriormente
 - Introduction: Lea la información y de click en Next.
@@ -196,12 +196,12 @@ Una vez se encuentre en la pestaña de configuración del stage 2 tenga en cuent
   - Single Sign-On password: Ingrese una contraseña teniendo en cuenta las especificaciones requeridas.
   - De click en Next.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE22.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE22.png"></p> 
 
 - Configure CEIP: Lea la información, si esta de acuerdo seleccione la casilla de Join the VMware's Customer Experience Improvement Program (CEIP) y de click en Next.
 - Ready to Complete: Verifique la información y de click en Finish.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/STAGE23.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/STAGE23.png"></p> 
 
 - Espere a que termine la instalación del segundo Stage.
  
@@ -374,14 +374,14 @@ La actualización del vCenter de la versión 6.7 a la 7.0 se realizará desde la
 1. Introduction:
  - Stage 1: Deploy vCenter Server: El primer stage consiste en desplegar un nuevo vCenter Server.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update1.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update1.png"></p> 
 
 2. End user licence agreement: Aceptar los términos de la licencia.
 3. Connect to source applience:
  - vCenter Server Applience: Ingrese la IP del Server Applience.
  - HTTP post: 443.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update2.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update2.png"></p> 
 
  - Seleccionar connect to source.
  Se desplegarán más opciones para completar.
@@ -400,25 +400,25 @@ La actualización del vCenter de la versión 6.7 a la 7.0 se realizará desde la
  - Username: SSO username.
  - Password: Ingresar el password del usuario.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update3.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update3.png"></p> 
 
 Dar clic en next y acepta el Certificate Warning.   
 
 5. Select Folder:
  - Seleccionar el Datacenter creado anteriormente y dar clic en next.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update4.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update4.png"></p> 
  
 6. Select compute resource:
  - Seleccionar la IP del recurso y dar clic en next.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update5.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update5.png"></p> 
 
 7. Set up a taget vCenter Server VM:
  - VM name: Ingresa el nombre del nuevo vCenter Server. 
  - Set root password: Ingrese la contraseña nueva para el vCenter Server.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update6.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update6.png"></p> 
  
 8. Select Deployment Size:
  - Deployment size: Seleccionar small y verificar en el cuadro inferior la cantidad de almacenamiento y CPUs seleccionada.
@@ -428,7 +428,7 @@ Dar clic en next y acepta el Certificate Warning.
  - Selecciona la casilla de Show only compatible datastores.
  - Selecciona la casilla de Enable Disk Mode y dar clic en next. 
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update7.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update7.png"></p> 
 
 10. Configure Network Settings:
  - Network: Seleccionar la red en la que se encontrará el host del vCenter, la cual desbe ser la misma que el ESXi. La red de management es la que se utiliza como buena práctica. 
@@ -439,19 +439,19 @@ Dar clic en next y acepta el Certificate Warning.
  - Default Gateway: Ingresar la IP de puerta de enlace por defecto de la subred. 
  - DNS sources: Ingresar las IP de DNS de IBM Cloud separadas por comas (10.0.80.11, 10.0.80.12) finalmente dar clic en next.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update8.png"></p> 
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update8.png"></p> 
  
 11. Ready to complete stage 1:
  - Revisar las especificaciones seleccionadas y dar clic en finish.
 
 Aparecerá una barra de carga del Stage 1 y posteriormente podremos entrar en el Stage 2.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update9.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update9.png"></p>
  
 1. Introduction
 En el Stage 2 se completa el proceso de update realizando una copia de los datos desde el source applience hacia el nuevo vCenter Server desplegado. Dar clic en next.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update10.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update10.png"></p>
  
 2. Connect to source vCenter Server:
  - Se realizará un pre-upgrate y se mostrarán resultados con algunos warnings, seleccionar cerrar.
@@ -460,7 +460,7 @@ Puedes revisar en el siguiente enlace algunos <a href="https://docs.vmware.com/e
 3. Select update data:
  - Seleccionar la data que se desea copiar: Seleccionar la primera opción de Configuration and Inventory para realizar una copia completa.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update11.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update11.png"></p>
  
 4. Configure CEIP:
  - Seleccionar la casilla de Join the VMware's Customer Experience Improvement Program y dar clic en next.
@@ -472,36 +472,36 @@ Puedes revisar en el siguiente enlace algunos <a href="https://docs.vmware.com/e
 
 Ingresar a la interfaz del ESXi colocando en el buscador la ip del host, luego ingresar al menú y luego a Lifecycle Manager en la barra izquierda.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update12.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update12.png"></p>
 
 2. Deberás descargar la iso del ESXi versión 7.0 VMware-VMvisor-Installer-7.0U1c-17325551.iso de la plataforma oficial de VMware, luego seleccionar import ISO y elegir el archivo descargado.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update13.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update13.png"></p>
 
 3. Crear un baseline:
  - Seleccionar Baseline, luego seleccionar create.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update14.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update14.png"></p>
  
  - Name and description: Ingresar un nombre para la configuración por defecto que generará el baseline.
    - Description: Agregar opcionalmente una descripción de la configuración.
    - Content: Seleccionar upgrade.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update15.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update15.png"></p>
  
  - Select ISO:
    - Seleccionar la ISO subida en el paso anterior y seleccionar next.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update16.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update16.png"></p>
 
  - Summary: 
    - Revisar el resumen de la configuración y dar clic en finish. 
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update17.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update17.png"></p>
  
 4. Seleccionar el menú y buscar la opción Inventory, luego seleccionar el host y buscar la opción Updates.
 
- <p align="center"><img width="600" src="https://github.ibm.com/jose-guerra-m/IBM-VMware-Zerto-DR/blob/main/Images/update18.png"></p>
+ <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update18.png"></p>
  
 5. En la opción Baselines seleccionar Attach y buscar la opción de Attact Baseline or Baselines group. 
 <br />
