@@ -506,24 +506,6 @@ Ingresar a la interfaz del ESXi colocando en el buscador la ip del host, luego i
 5. En la opción Baselines seleccionar Attach y buscar la opción de Attact Baseline or Baselines group. 
 <br />
 
-## Creación del Zerto Virtual Manager ###
-
-El siguiente paso será desplegar el host de Zerto dentro de IBM Cloud, para ello seguimos los siguientes pasos:
-
-  1. En la sección de servicios busque VMware Solutions. 
-  2. Seleccione VMware Solutions Shared.
-  3. Complete los siguentes parámetros: 
- 
-   - Pricing plan: Seleccione On demand. 
-   - Virtual Data Center name: Ingrese un nombre a elección para el Virtual Data Center. 
-   - Deployment Topology: Seleccione Single-zone VMware virtual data center.
-   - Data Center Location: Seleccione una ubicación diferente a la del vCenter desplegado.
-   - vCPU limit: Ingrese un valor deseado para la capacidad del vCPU entre 1 y 512.
-   - RAM limit: Ingrese un valor deseado para la memoria RAM dentre 1 y 10240 GB.
-   - Recomended Services: Finalmente seleccione el servicio recomendado de Business Continuity Zerto.
-<br />
-
-
 
 ## Implementación del Disaster recovery ##
 
