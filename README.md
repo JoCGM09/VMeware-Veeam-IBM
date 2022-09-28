@@ -515,5 +515,8 @@ Ingresar a la interfaz del ESXi colocando en el buscador la ip del host, luego i
 * <a href="https://dalzssp01.vmware-solutions.cloud.ibm.com/Help/ZSSP/Content/ZSSP/CreateVPG.htm?cshid=ZSSP/CreateVPG.htm"> Configuración de VPG en Zerto </a>.
 <br />
 
+* <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade"> Actualización VMware 7.0 </a>.
+<br />
+
 ## :black_nib: Autores 
 Equipo ☁️ IBM Public Cloud Customer Success.
