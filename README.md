@@ -505,17 +505,19 @@ Ingresar a la interfaz del ESXi colocando en el buscador la ip del host, luego i
  
 5. En la opción Baselines seleccionar Attach y buscar la opción de Attact Baseline or Baselines group. 
 
-
-
  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update19.png"></p>
  
+6. Seleccionar la opción Update ESXi y seleccionar Attach.
+
  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update20.png"></p> 
+
+7. Una vez seleccionada la casilla de Update ESXi seleccionar REMEDIATE.
 
  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update21.png"></p>
  
+8. Finalmente aceptar los términos y condiciones, luego seleccionar OK.
+
  <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update22.png"></p>
-  
- <p align="center"><img width="600" src="https://github.com/JoCGM09/VMware-Veeam-IBM/blob/master/Images/update23.png"></p>
 
 <br />
 
